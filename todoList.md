@@ -6,7 +6,7 @@
   1. from config file (third party registration)
   2. provide an end point to register each service own information (self registration)
 - handle incoming requests
-- provide load balancing algorithm for dispatching request
+- provide load balancing algorithm for dispatching request (currently roundRabin with weight according to occupied resources in each service )
 - monitoring condition of services
 - provide an efficient way to connect services to dispatcher ( hhtp2 or websocket and sending data in form of binary)
 - provide a way to handling sharing data between services
