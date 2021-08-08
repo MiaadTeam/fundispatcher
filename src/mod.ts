@@ -4,7 +4,7 @@ export {};
 
 // read config file for some services
 
-//register some services with provide a route to register service individually
+//register remained services with provide a route to register service individually
 
 //read declaration file for each service
 

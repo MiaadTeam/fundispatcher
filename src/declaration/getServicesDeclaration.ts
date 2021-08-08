@@ -1,17 +1,18 @@
+import { ServiceInfo } from "./../types/serviceInfo.ts";
 import {
-  FunQLServiceResSchema,
+  FunQLResSchema,
   ServicesDeclaration,
 } from "../types/servicesDeclaration.ts";
 
-type SingleServiceDeclaration = {
-  serviceId: string;
-  serviceName?: string;
-  reqSchema: FunQLServiceResSchema;
+type ServiceDeclarationWithInfo = {
+  serviceInfo: ServiceInfo;
+  reqSchema: FunQLResSchema;
 };
 
 /**
  * gets a single file contains services declaration that specifies which service can handle which  contents models and doits
+ * it also find out priority of each service
  */
-type GetServiceDeclaration = (
-  serviceDeclarations: SingleServiceDeclaration[]
+type GetServicesDeclaration = (
+  serviceDeclarations: ServiceDeclarationWithInfo[]
 ) => ServicesDeclaration;
