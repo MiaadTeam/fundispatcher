@@ -1,0 +1,22 @@
+{
+  "services": {
+    "service1": {
+      "declarations": {
+        "path": "",
+        "url": "s"
+      },
+      "server": {
+        "url": "",
+        "port": "",
+        "autoRunning": {
+          "serverLocalLocation": "",
+          "cmd": ""
+        }
+      },
+      "authorization": {
+        "clientId": "",
+        "secret": ""
+      }
+    }
+  }
+}
