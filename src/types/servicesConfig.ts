@@ -1,23 +1,25 @@
 import { ServiceInfo } from "./serviceInfo.ts";
 export interface ServicesConfig {
   services: {
-    [k: string]: {
-      declarations: {
-        path: string;
-        url: string;
-      };
-      server: {
-        url: string;
-        port: string;
-        autoRunning: {
-          serverLocalLocation: string;
-          cmd: string;
-        };
-      };
-      authorization: {
-        clientId: string;
-        secret: string;
-      };
+    [k: string]: ServiceConfig;
+  };
+}
+
+export interface ServiceConfig {
+  declarations: {
+    path: string;
+    url: string;
+  };
+  server: {
+    url: string;
+    port: string;
+    localAutoRunning: {
+      serverLocalLocation: string;
+      cmd: string;
     };
+  };
+  authorization: {
+    clientId: string;
+    secret: string;
   };
 }

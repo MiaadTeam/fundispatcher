@@ -1,6 +1,6 @@
 {
   "services": {
-    "service1": {
+    "orderService": {
       "declarations": {
         "path": "",
         "url": "s"
@@ -8,7 +8,7 @@
       "server": {
         "url": "",
         "port": "",
-        "autoRunning": {
+        "localAutoRunning": {
           "serverLocalLocation": "",
           "cmd": ""
         }

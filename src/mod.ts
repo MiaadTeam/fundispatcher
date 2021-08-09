@@ -1,6 +1,6 @@
 export {};
 
-//run main server
+//run main server and listen to client`s request
 
 // read config file for some services
 

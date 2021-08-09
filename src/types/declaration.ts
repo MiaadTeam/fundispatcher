@@ -1,6 +1,10 @@
 import { ServiceInfo } from "./serviceInfo.ts";
 
-export interface ServicesDeclaration {
+/**
+ * @interface
+ * similar to FunQLReqSchema except that it has some details about available services for the considered doits and models
+ */
+export interface DispatcherDeclaration {
   schema: {
     contents: {
       [key: string]: {
@@ -23,6 +27,9 @@ export interface ServicesDeclaration {
   };
 }
 
+/**
+ * request type of body in funql
+ */
 export type FunQLReqSchema = {
   schema: {
     contents: {
@@ -31,7 +38,7 @@ export type FunQLReqSchema = {
           [key: string]: {
             doits: {
               [key: string]: {
-                details: { get?: unknown; set?: unknown };
+                details: { set: unknown; get: unknown };
               };
             };
           };
@@ -40,6 +47,7 @@ export type FunQLReqSchema = {
     };
   };
 };
+
 /**
  * response type of body in funql
  */
