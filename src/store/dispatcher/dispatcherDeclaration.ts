@@ -1,4 +1,4 @@
-import { DispatcherDeclaration } from "./../types/declaration.ts";
+import { DispatcherDeclaration } from "../../types/declaration.ts";
 
 /**
  * a place for storing constructed dispatcher declaration
