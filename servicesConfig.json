@@ -16,7 +16,12 @@
       "authorization": {
         "clientId": "",
         "secret": ""
-      }
+      },
+      "dependOn": [
+        {
+          "name": ""
+        }
+      ]
     }
   }
 }

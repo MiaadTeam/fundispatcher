@@ -7,19 +7,19 @@ export interface ServicesConfig {
 
 export interface ServiceConfig {
   declarations: {
-    path: string;
-    url: string;
+    path?: string;
+    url?: string;
   };
   server: {
     url: string;
     port: string;
-    localAutoRunning: {
+    localAutoRunning?: {
       serverLocalLocation: string;
-      cmd: string;
+      cmd?: string;
     };
   };
-  authorization: {
+  authorization?: {
     clientId: string;
-    secret: string;
+    secret?: string;
   };
 }

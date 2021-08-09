@@ -1,10 +1,12 @@
+import { FunQLReqSchema } from "../types/declaration.ts";
 import { ServiceInfo } from "../types/serviceInfo.ts";
-import { FunQLServiceReqSchema } from "../types/servicesDeclaration.ts";
 
 /**
  * dispatch a request to selected service and also handling error
+ * @remarks before runs this function, we should choose appropriate service
  */
 export type DispatchRequest = (
-  request: FunQLServiceReqSchema,
-  selectedServiceInfo: ServiceInfo
+  request: FunQLReqSchema,
+  header: Headers,
+  selectedService: ServiceInfo
 ) => void;

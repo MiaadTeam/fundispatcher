@@ -1,7 +1,8 @@
+import { ServiceConfig } from "./servicesConfig.ts";
 /**
  * that is used to dispatch request to selected service
  */
-export interface ServiceInfo {
+export interface ServiceInfo extends Partial<ServiceConfig> {
   /**
    * it from name from services service
    */

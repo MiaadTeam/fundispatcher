@@ -12,13 +12,11 @@ export interface DispatcherDeclaration {
           [key: string]: {
             doits: {
               [key: string]: {
-                serviceInfosWithDetails: {
-                  serviceInfo: ServiceInfo;
-                  //defines priority of server
-                  serverPriority: number;
-                  details: { get?: unknown; set?: unknown };
-                }[];
-              };
+                serviceInfo: ServiceInfo;
+                //defines priority of server
+                servicePriority: number;
+                details: { get?: unknown; set?: unknown };
+              }[];
             };
           };
         };
