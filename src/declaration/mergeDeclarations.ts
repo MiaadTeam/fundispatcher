@@ -3,6 +3,6 @@ import { ServiceInfoWithDeclaration } from "./../types/serviceInfoWithDeclaratio
  * this function merge declaration into one file for request and response to use client from it for type safety.
  */
 export type MergeDeclarations = (
-  declarationWithInfo: ServiceInfoWithDeclaration[],
+  serviceInfoWithDeclarations: ServiceInfoWithDeclaration[],
   options?: { path?: string }
 ) => void;

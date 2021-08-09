@@ -12,7 +12,7 @@ export {};
 
 //construct an object for find out each service can handle which model and doit
 
-//finds condition of each service that help to determine handling request
+//finds status and condition of each service that help to determine handling request
 
 //find suitable service for handling given request
 

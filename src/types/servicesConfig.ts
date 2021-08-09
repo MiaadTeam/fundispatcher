@@ -1,4 +1,3 @@
-import { ServiceInfo } from "./serviceInfo.ts";
 export interface ServicesConfig {
   services: {
     [k: string]: ServiceConfig;

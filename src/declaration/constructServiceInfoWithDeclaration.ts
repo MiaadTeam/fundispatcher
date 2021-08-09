@@ -6,7 +6,7 @@ import { ServiceConfig } from "../types/servicesConfig.ts";
  *
  * @remarks it also assign a unique id and for each service
  */
-export type constructServiceDeclarationWithInfo = (
+export type constructServiceInfoWithDeclaration = (
   name: string,
   serviceConfig: ServiceConfig,
   declaration: FunQLDeclaration

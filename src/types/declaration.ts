@@ -13,7 +13,7 @@ export interface DispatcherDeclaration {
             doits: {
               [key: string]: {
                 serviceInfo: ServiceInfo;
-                validationObj?: any;
+                validationObj?: unknown;
                 //defines priority of server
                 priority?: number;
                 details: { get?: unknown; set?: unknown };
@@ -28,7 +28,7 @@ export interface DispatcherDeclaration {
 
 export interface FunQLDeclaration {
   reqSchema: FunQLReqSchema;
-  validationObj?: any;
+  validationObj?: unknown;
 }
 
 /**
