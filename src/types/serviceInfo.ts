@@ -4,7 +4,7 @@ import { ServiceConfig } from "./servicesConfig.ts";
  */
 export interface ServiceInfo extends Partial<ServiceConfig> {
   /**
-   * it from name from services service
+   * it from name from services field
    */
   name: string;
   /**

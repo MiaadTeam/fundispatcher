@@ -1,10 +1,8 @@
-import { ServiceDeclarationWithInfo } from "./../types/serviceDeclarationWithInfo.ts";
-import { ServicesConfig } from "../types/servicesConfig.ts";
-
+import { ServiceInfoWithDeclaration } from "./../types/serviceInfoWithDeclaration.ts";
 /**
- * this function merge declaration into one file for request and response
+ * this function merge declaration into one file for request and response to use client from it for type safety.
  */
 export type MergeDeclarations = (
-  declarationWithInformation: ServiceDeclarationWithInfo[],
+  declarationWithInfo: ServiceInfoWithDeclaration[],
   options?: { path?: string }
 ) => void;

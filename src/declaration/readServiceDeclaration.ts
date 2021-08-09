@@ -1,9 +1,9 @@
-import { FunQLDeclaration, FunQLReqSchema } from "./../types/declaration.ts";
+import { FunQLDeclaration } from "./../types/declaration.ts";
 import { ServiceConfig } from "../types/servicesConfig.ts";
 
 /**
- * get declaration file from specified local path or url
- * @note url has higher order than path
+ * get declaration file from specified local path or url in service config
+ * @note url has higher priority than path
  */
 export type readServiceDeclaration = (
   serviceConfig: ServiceConfig

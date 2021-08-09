@@ -15,7 +15,7 @@ export interface DispatcherDeclaration {
                 serviceInfo: ServiceInfo;
                 validationObj?: any;
                 //defines priority of server
-                servicePriority?: number;
+                priority?: number;
                 details: { get?: unknown; set?: unknown };
               }[];
             };

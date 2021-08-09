@@ -1,4 +1,4 @@
-import { ServiceDeclarationWithInfo } from "./../types/serviceDeclarationWithInfo.ts";
+import { ServiceInfoWithDeclaration } from "./../types/serviceInfoWithDeclaration.ts";
 import { FunQLDeclaration } from "./../types/declaration.ts";
 import { ServiceConfig } from "../types/servicesConfig.ts";
 
@@ -10,4 +10,4 @@ export type constructServiceDeclarationWithInfo = (
   name: string,
   serviceConfig: ServiceConfig,
   declaration: FunQLDeclaration
-) => ServiceDeclarationWithInfo;
+) => ServiceInfoWithDeclaration;
