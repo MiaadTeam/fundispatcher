@@ -1,4 +1,4 @@
-import { FunQLReqSchema } from "./../types/declaration.ts";
+import { FunQLDeclaration, FunQLReqSchema } from "./../types/declaration.ts";
 import { ServiceConfig } from "../types/servicesConfig.ts";
 
 /**
@@ -7,4 +7,4 @@ import { ServiceConfig } from "../types/servicesConfig.ts";
  */
 export type readServiceDeclaration = (
   serviceConfig: ServiceConfig
-) => FunQLReqSchema;
+) => FunQLDeclaration;

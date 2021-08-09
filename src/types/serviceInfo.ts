@@ -15,8 +15,8 @@ export interface ServiceInfo extends Partial<ServiceConfig> {
     url: string;
     port: string;
   };
-  authorization: {
+  authorization?: {
     clientId: string;
-    secret: string;
+    secret?: string;
   };
 }

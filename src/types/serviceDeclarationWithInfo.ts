@@ -1,4 +1,4 @@
-import { FunQLReqSchema } from "./declaration.ts";
+import { FunQLDeclaration } from "./declaration.ts";
 import { ServiceInfo } from "./serviceInfo.ts";
 /**
  * @interface
@@ -6,5 +6,5 @@ import { ServiceInfo } from "./serviceInfo.ts";
  */
 export type ServiceDeclarationWithInfo = {
   serviceInfo: ServiceInfo;
-  reqSchema: FunQLReqSchema;
+  declaration: FunQLDeclaration;
 };

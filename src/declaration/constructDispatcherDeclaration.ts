@@ -2,9 +2,9 @@ import { ServiceDeclarationWithInfo } from "../types/serviceDeclarationWithInfo.
 import { DispatcherDeclaration } from "../types/declaration.ts";
 
 /**
- * gets a single file contains services declaration that specifies which service can handle which  contents models and doits
- * it also determines priority of each service with some condition
+ * gets a single file contains services declaration that specifies which service can handle which contents models and doits
+ * it also determines priority of each service according to some condition
  */
-type GetDispatcherDeclaration = (
+type ConstructDispatcherDeclaration = (
   serviceDeclarations: ServiceDeclarationWithInfo[]
 ) => DispatcherDeclaration;
